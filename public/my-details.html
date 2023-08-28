@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en-au">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+		<title>My details - <%= process.env.VUE_APP_NAME %></title>
+
+		<link href="./css/material-icons.css" rel="stylesheet" />
+		<link href="./css/local-dev.css" rel="stylesheet" />
+
+		<link href="./js/local-dev.js" rel="preload" as="script" />
+	</head>
+
+	<body>
+		<noscript>
+			<strong>
+				We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't
+				work properly without JavaScript enabled. Please enable it to
+				continue.
+			</strong>
+		</noscript>
+		<div>
+			<div>
+				<div class="menu-overlay hidden"></div>
+				<header>
+					<div class="thinHeader">
+						<div class="thinHeader__wrapper">
+							<img src="./-/media/site/global/the-smith-family-logo-footer-144.svg" class="thinHeader__logo" alt="The Smith Family Logo Image" />
+							<div class="thinHeader__dropdown">
+								<ul class="navDropdown">
+									<li class="navDropdown__item--first">
+										<span class="navDropdown-menu">
+											<span class="material-icons menu-icon-open active-icon">menu</span>
+											<span class="material-icons menu-icon-close"
+												>close</span>
+											<span class="menu-text">Menu</span>
+										</span>
+									</li>
+									<li>
+										<ul class="navDropdown__allitems">
+											<li class="navDropdown__item--second">
+												<a href="./my-summary.html">
+													<div><span
+															class="material-icons menu-icon"
+															>home</span>Summary</div>
+												</a>
+											</li>
+											<li class="navDropdown__item--second">
+												<div class="navDropdown__item--expand">
+													<span class="material-icons menu-icon">supervised_user_circle</span>
+													Family Details
+													<span class="material-icons icon icon-close">expand_less</span>
+													<span class="material-icons icon icon-open active">expand_more</span>
+												</div>
+												<ul class="navDropdown__item--expanded-items">
+													<li class="navDropdown__item--third">
+														<a href="./my-details.html">
+															<div>
+																<span class="material-icons menu-icon">account_circle</span>My Details
+															</div>
+														</a>
+													</li>
+													<li class="navDropdown__item--third" >
+														<div class="navDropdown__item--expand-2" >
+															<span class="material-icons menu-icon">face</span>My Children
+															<span class="material-icons icon icon-close">expand_less</span>
+															<span class="material-icons icon icon-open active">expand_more</span>
+														</div>
+														<ul class="navDropdown__item--expanded-items-2">
+															<li class="navDropdown__item--fourth">
+																<a href="./my-children.html?childid=f3303187-aabe-e711-811b-00155d047fea">
+																	<div>
+																		<span style="padding-right: 18px;">
+																			<img src="./-/media/site/global/MSF-20/girl.svg" alt="Female" />
+																		</span>
+																		Zara Firstname
+																	</div>
+																</a>
+															</li>
+															<li class="navDropdown__item--fourth">
+																<a href="./my-children.html?childid=ac22f0a8-b3be-e711-811b-00155d047fea" >
+																	<div>
+																		<span style=" padding-right: 18px;">
+																			<img src="./-/media/site/global/MSF-20/x.svg" alt="Unspecified" />
+																		</span>
+																		Darri ap
+																	</div>
+																</a>
+															</li>
+															<li class="navDropdown__item--fourth">
+																<a href="./my-children.html?childid=6af72599-615c-ec11-8f8f-002248180af4">
+																	<div>
+																		<span style="padding-right: 18px;">
+																			<img src="./-/media/site/global/MSF-20/girl.svg" alt="Female" />
+																		</span>
+																		Lionelap
+																	</div>
+																</a>
+															</li>
+															<li class="navDropdown__item--fourth">
+																<a href="./my-children.html?childid=cab2971e-899a-ec11-b400-002248d383fb" >
+																	<div>
+																		<span style="padding-right: 18px;">
+																			<img src="./-/media/site/global/MSF-20/girl.svg" alt="Female" />
+																		</span>
+																		Viv Firstname
+																	</div>
+																</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li class="navDropdown__item--second">
+												<a href="./my-documents.html">
+													<div><span class="material-icons menu-icon">description</span>Documents</div>
+												</a>
+											</li>
+											<li class="navDropdown__item--second">
+												<a href="./my-payments.html">
+													<div><span class="material-icons menu-icon">monetization_on</span>Payments</div>
+												</a>
+											</li>
+											<li class="navDropdown__item--second">
+												<a href="./Noticeboard.html">
+													<div><span class="material-icons menu-icon">local_activity</span>Noticeboard</div>
+												</a>
+											</li>
+											<li class="navDropdown__item--second">
+												<a href="./offers.html">
+													<div><span class="material-icons menu-icon">local_activity</span>Offers</div>
+												</a>
+											</li>
+											<li class="navDropdown__item--second">
+												<a href="./contact-us.html">
+													<div><span class="material-icons menu-icon">perm_phone_msg</span>Contact Us</div>
+												</a>
+											</li>
+											<li class="navDropdown__item--second">
+												<a href="./logout.html">
+													<div><span class="material-icons menu-icon">logout</span>Logout</div>
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="thinHeader__user">
+							<p class="thinHeader__userName">
+								Hi <span id="TSF-username">Baron</span>
+								<span id="wave" class="material-icons menu-icon hello">pan_tool</span>
+							</p>
+						</div>
+					</div>
+				</header>
+
+				<div>
+					<div class="main">
+<div class="msf-section" id="MyDetails" hidden>
+	<loaderoverlay-component :loading="!ready" loading-header="Loading..."
+		loading-message="Please do not close this window."></loaderoverlay-component>
+	<div v-if="ready">
+		<input id="tsfid" type="hidden" name="tsfid" :value="userObject.TsfId" />
+		<title-component :title="userObject.SitecoreContent.UserProfilePageContent.Title" icon="account_circle"></title-component>
+		<divider-component></divider-component>
+		<module4-component :content="userObject.SitecoreContent.UserProfilePageContent.Description"></module4-component>
+
+		<!--
+		<info-block id="changes"
+			heading="View and update your details below"
+			style="margin-top: 3.5rem;"
+			stand-alone>
+			<template v-slot:infotxt>
+				<p>{{ userObject.SitecoreContent.UserProfilePageContent.ContactDetailsUpdate }}</p>
+				<p>{{ userObject.SitecoreContent.UserProfilePageContent.ContactDetailsUpdateContent }}</p>
+			</template>
+		</info-block>
+		-->
+
+		<!-- <div class="inputs-w-info--alternate"> -->
+			<!-- START: Personal details -->
+			<inputs-with-info
+				deep-data
+				:heading="userObject.SitecoreContent.UserProfilePageContent.PersonalHeading"
+				id="personal"
+				info-bg-colour="white"
+				:info-heading="userObject.SitecoreContent.UserProfilePageContent.ContactContentHeading"
+				input-icon="contacts"
+				input-heading="Personal details"
+				input-size="2/3"
+				:user-data="userObject">
+				<template v-slot:infoblock>
+					<idcard-component :user="userObject"></idcard-component>
+				</template>
+			</inputs-with-info>
+			<!--  END:  Personal details -->
+
+			<!-- START: Contact details -->
+			<inputs-with-info
+				deep-data
+				:heading="userObject.SitecoreContent.UserProfilePageContent.ContactHeading"
+				id="contact"
+				:info-heading="userObject.SitecoreContent.UserProfilePageContent.ContactContentHeading"
+				input-icon="perm_phone_msg"
+				input-heading="Contact details"
+				input-size="2/3"
+				:user-data="userObject">
+				<template v-slot:infobody>
+					<p>{{ userObject.SitecoreContent.UserProfilePageContent.ContactDetailsUpdate }}</p>
+					<p>{{ userObject.SitecoreContent.UserProfilePageContent.ContactDetailsUpdateContent }}</p>
+				</template>
+			</inputs-with-info>
+			<!--  END:  Contact details -->
+
+			<!-- START: Household information -->
+			<!--
+			<inputs-with-info
+				extra-inputs-first
+				heading="Contact and Household"
+				id="contact-household"
+				no-info
+				input-icon="contacts"
+				input-heading="Household information"
+				:user-data="userObject">
+				<template v-slot:extrainputs>
+					<inputs-block
+						deep-data
+						input-icon="perm_phone_msg"
+						input-heading="Contact details"
+						input-id="contact"
+						old-style
+						:user-data="userObject">
+					</inputs-block>
+				</template>
+			</inputs-with-info>
+			-->
+			<!--  END:  Household information -->
+
+			<!-- START: Education -->
+			<inputs-with-info
+				v-if="userObject.IsIndependentStudent === false"
+				:heading="userObject.EducationAndEmploymentContent.EducationComponentHeading"
+				id="education"
+				:info-heading="userObject.EducationAndEmploymentContent.EducationHeading"
+				:info-txt="userObject.EducationAndEmploymentContent.EducationDescription"
+				input-icon="history_edu"
+				:input-heading="userObject.EducationAndEmploymentContent.EducationTileHeading"
+				:user-data="userObject">
+			</inputs-with-info>
+			<!--  END:  Education -->
+
+			<!-- START: Employment -->
+			<inputs-with-info
+				v-if="userObject.IsIndependentStudent === false"
+				:heading="userObject.EducationAndEmploymentContent.EmploymentComponentHeading"
+				id="employment"
+				input-icon="work"
+				:info-heading="userObject.EducationAndEmploymentContent.EmploymentHeading"
+				:info-txt="userObject.EducationAndEmploymentContent.EmploymentDescription"
+				:input-heading="userObject.EducationAndEmploymentContent.EmploymentTileHeading"
+				:user-data="userObject">
+			</inputs-with-info>
+			<!--  END:  Employment -->
+
+			<!-- START: Cultural information -->
+			<inputs-with-info
+				deep-data
+				:heading="userObject.CulturalInfoContent.CulturalTileHeading"
+				id="culture"
+				info-btn-txt="VISIT HELP CENTRE"
+				:info-btn-url="userObject.CulturalInfoContent.CulturalHelpCentreUrl"
+				:info-heading="userObject.CulturalInfoContent.CulturalHeading"
+				:info-txt="userObject.CulturalInfoContent.CulturalDescription"
+				:input-heading="userObject.CulturalInfoContent.SectionHeading"
+				input-icon="blur_on_black"
+				:user-data="userObject">
+			</inputs-with-info>
+			<!--  END:  Cultural information -->
+
+			<!-- START: Health and disability -->
+			<inputs-with-info v-if="userObject.HealthDisabilityContent"
+				:heading="userObject.HealthDisabilityContent.Heading"
+				id="health"
+				info-btn-txt="VISIT HELP CENTRE"
+				:info-btn-url="userObject.SitecoreContent.HelpCentrePageContent.HelpCentreLinkUrl"
+				:info-heading="userObject.HealthDisabilityContent.HealthDescriptionHeading"
+				:info-txt="userObject.HealthDisabilityContent.HealthDescription"
+				:input-heading="userObject.HealthDisabilityContent.HealthDetailsHeading"
+				input-icon="accessibility_new"
+				:user-data="userObject"
+				user-data-key="HealthAndDisablity">
+			</inputs-with-info>
+			<!--  END:  Health and disability -->
+
+			<!-- START: Sponsor and Independant / tertiary -->
+			<div v-if="userObject.IsIndependentStudent && userObject.TertiaryStudent">
+				<!-- START: Tertiary studies -->
+				<inputs-with-info
+					v-if="userObject.IsIndependentStudent === true"
+					:heading="userObject.EducationAndEmploymentContent.EducationComponentHeading"
+					id="tertiary-ed"
+					:info-heading="userObject.EducationAndEmploymentContent.TertiaryEducationHeading"
+					:info-txt="userObject.EducationAndEmploymentContent.TertiaryEducationDescription"
+					input-icon="school"
+					:input-heading="userObject.EducationAndEmploymentContent.TertiaryEducationTileHeading"
+					no-edit
+					:user-data="userObject">
+				</inputs-with-info>
+				<!--  END:  Tertiary studies -->
+
+				<!-- START: Sponsor -->
+				<module5-component v-if="userObject.SupporterDetails.length > 0"
+					title="SPONSORS"
+					:subheading="userObject.SitecoreContent.SponsorDetailsContent.SponsorTertiaryTitle"
+					:content="userObject.SitecoreContent.SponsorDetailsContent.SponsorTertiaryDescription">
+				</module5-component>
+				<module5-component v-else title="SPONSORS"></module5-component>
+				<sponsor-list :supporter-details="userObject.SupporterDetails"
+					:empty-message="userObject.SitecoreContent.SponsorDetailsContent.TertiarySponsorEmpty"
+					:businessSponsorIconUrl="userObject.SitecoreContent.SponsorDetailsContent.BusinessSponsorIconUrl"
+					:individualSponsorIconUrl="userObject.SitecoreContent.SponsorDetailsContent.IndividualSponsorIconUrl">
+				</sponsor-list>
+				<cta-component v-if="userObject.SupporterDetails.length > 0"
+					icon="message" title-text="Writing a message to your sponsor">
+					<div class="flex column mt-16">
+						<p class="text-center">
+							Find out how you can send a message of thanks to your sponsor via the Help Centre.
+						</p>
+						<button-component @@click.native="relocateLflHelpCentre"
+							type="secondary" text="VISIT HELP CENTRE">
+						</button-component>
+					</div>
+				</cta-component>
+				<!--  END:  Sponsor -->
+			</div>
+			<!--  END:  Sponsor and Independant / tertiary -->
+
+			<!-- START: User profile -->
+			<!-- START: Digital Access -- >
+			<module5-component :title="userObject.SitecoreContent.UserProfilePageContent.DigitalContentHeading"></module5-component>
+			<div class="wrapper">
+				<digital-access-component :digital-access="userObject"></digital-access-component>
+			</div>
+			< !--  END:  Digital Access -->
+
+			<!-- START: Digital Access (NEW) -->
+			<inputs-with-info
+				:heading="userObject.SitecoreContent.UserProfilePageContent.DigitalContentHeading"
+				id="digital"
+				no-info
+				input-icon="phonelink"
+				:input-heading="userObject.SitecoreContent.UserProfilePageContent.DeviceHeading"
+				input-size="full"
+				:user-data="userObject"
+				user-data-key="DigitalAccess">
+			</inputs-with-info>
+			<!--  END:  Digital Access (NEW) -->
+
+			<!-- START: Alternative Contact details -->
+			<inputs-with-info
+				:heading="userObject.AlternativeContactSetting.SectionHeading"
+				id="alt-contact"
+				:info-heading="userObject.AlternativeContactSetting.HelpHeading"
+				:info-txt="userObject.AlternativeContactSetting.HelpContent"
+				input-icon="perm_phone_msg"
+				:input-heading="userObject.AlternativeContactSetting.Title"
+				input-size="lg"
+				swap
+				:user-data="userObject"
+				user-data-key="EmergencyContactDetails">
+			</inputs-with-info>
+			<!--  END:  Alternative Contact details -->
+
+			<!-- START: User account -->
+			<inputs-with-info
+				:heading="userObject.SitecoreContent.UserProfilePageContent.AccountHeading"
+				id="password-reset"
+				:info-heading="userObject.SitecoreContent.HelpCentrePageContent.HelpCentreContent"
+				:info-txt="userObject.SitecoreContent.HelpCentrePageContent.HelpCentre"
+				:info-btn-url="userObject.SitecoreContent.HelpCentrePageContent.HelpCentreLinkUrl"
+				:info-btn-txt="userObject.SitecoreContent.HelpCentrePageContent.HelpCentreButtonText"
+				input-icon="lock"
+				input-heading="Login details"
+				set-new-props
+				swap
+				:user-data="userObject"
+				user-data-key="EmergencyContactDetails">
+			</inputs-with-info>
+			<!--  END:  User account -->
+			<!--  END:  User profile -->
+		<!-- </div> -->
+	</div>
+</div>
+					</div>
+				</div>
+			</div>
+
+			<footer>
+				<div class="footer footer__top-wrapper">
+					<div class="footer__logo-image">
+						<a href="./">
+							<img src="./-/media/site/global/the-smith-family-logo-footer-144.svg" alt="The Smith Family - Everyone's Family" />
+						</a>
+					</div>
+					<div class="footer__copy-content">
+						<h2>
+							<h2 style="text-transform: none">
+								The Smith Family is Australia’s leading independent children’s education charity.
+							</h2>
+						</h2>
+					</div>
+					<div class="footer__quote">
+						<div class="quote" style="color: #002647">
+							Attending school every day helps your child to achieve their best!
+						</div>
+						<p class="bold">Family Partnership Coordinator</p>
+					</div>
+				</div>
+				<div class="footer__section-bottom">
+					<p>2022 &#169; The Smith Family ABN 28 000 030 179</p>
+				</div>
+			</footer>
+		</div>
+		<nav id="user-chooser">
+			<ul>
+				<li>
+					<button class="user-chooser__btn" value="4256591b-a9be-e711-811b-00155d047fea">
+						MattTest7
+					</button>
+				</li>
+				<li>
+					<button class="user-chooser__btn" value="fd716c82-f2e0-e511-80e2-00155d03cc20">
+						TerryTest2
+					</button>
+				</li>
+				<li>
+					<button class="user-chooser__btn" value="4256591b-a9be-e711-811b-00155d047fea--1">
+						EmptyMatt
+					</button>
+				</li>
+				<li>
+					<button class="user-chooser__btn user-chooser__btn--fail" value="fail" title="Cause next request to fail">
+						Fail next
+					</button>
+				</li>
+			</ul>
+		</nav>
+
+		<script src="./js/local-dev.js"></script>
+
+		<!-- START: Extra JS -->
+		<script src="/FamilyPortal/mockServiceWorker.js"></script>
+		<!--  END:  Extra JS -->
+
+	</body>
+</html>

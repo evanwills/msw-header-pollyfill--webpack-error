@@ -1,0 +1,60 @@
+{
+  "name": "msf",
+  "version": "0.9.0",
+  "private": true,
+  "engines": {
+    "node": ">= 18"
+  },
+  "scripts": {
+    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
+    "serve": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
+    "devbuild": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build --mode development",
+    "test": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@vuelidate/core": "^2.0.0-alpha.41",
+    "@vuelidate/validators": "^2.0.0-alpha.29",
+    "axios": "^0.21.1",
+    "core-js": "^3.23.1",
+    "dayjs": "^1.11.3",
+    "dialog-polyfill": "^0.5.6",
+    "image-blob-reduce": "^4.1.0",
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
+    "msw": "^1.2.5",
+    "object-to-formdata": "^4.4.2",
+    "vue": "^2.7.14",
+    "vue-loaders": "^4.1.4",
+    "vue-select": "^3.11.2",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/vue": "^5.8.3",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-unit-jest": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-airbnb": "^5.0.2",
+    "@vue/eslint-config-prettier": "^5.1.0",
+    "@vue/test-utils": "^1.0.3",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-vue": "^6.2.2",
+    "file-loader": "^6.2.0",
+    "normalize.css": "^8.0.1",
+    "prettier": "^2.7.0",
+    "sass": "^1.52.3",
+    "sass-loader": "^8.0.2",
+    "url-loader": "^4.1.1",
+    "vue-demi": "^0.12.5",
+    "vue-template-compiler": "^2.7.14"
+  },
+  "msw": {
+    "workerDirectory": "public"
+  }
+}
