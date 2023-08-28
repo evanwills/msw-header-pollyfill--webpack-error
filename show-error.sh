@@ -1,5 +1,9 @@
 #!/bin/sh
 
+if [ ! -d 'node_modules' ]
+then	npm install
+fi
+
 rev=$(grep '|| null;' -n node_modules/headers-polyfill/lib/index.mjs);
 
 if [ ! -z "$rev" ]
